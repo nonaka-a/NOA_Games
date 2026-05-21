@@ -179,6 +179,19 @@ nav a {
     color: var(--primary);
 }
 
+.story-image-card {
+    background: white;
+    padding: 14px;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+}
+
+.story-image {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+
 footer { padding: 60px 0; text-align: center; background: var(--gray); }
 
 .footer-links {
