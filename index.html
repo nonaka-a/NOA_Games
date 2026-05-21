@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOA_Games | アニメの魔法で、勉強を遊びに。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">NOA_Games</h1>
+            <nav>
+                <ul>
+                    <li><a href="#games">あそぶ ＋ 学ぶ</a></li>
+                    <li><a href="#story">制作の舞台裏</a></li>
+                    <li><a href="#teachers">先生・保護者の方へ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Directed by Akifumi Nonaka</div>
+                <h2>ゲームの魔法で、<br>勉強を遊びに。</h2>
+                <p>プロのアニメーション監督とAIがつくる、<br>こどもたちが自ら夢中になる「新しい学びの場」</p>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <div class="container">
+                <h2 class="section-title">ゲームで「あそぶ」＋「学ぶ」</h2>
+                <div class="game-grid">
+                    <div class="game-card highlight">
+                        <div class="game-badge">算数：計算</div>
+                        <div class="game-thumb" style="background: #4CAF50 url('images/keisan_main.png') center/cover;">
+                        </div>
+                        <div class="game-info">
+                            <p>計算でモンスターを撃退するタワーディフェンス。全国の小学校の授業時間にも活用されている人気タイトルです。</p>
+                            <button class="play-btn" data-modal="modal-keisan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-badge">算数：パズル</div>
+                        <div class="game-thumb" style="background: #0066ff url('images/gururizan_main.jpg') center/cover;">
+                        </div>
+                        <div class="game-info">
+                            <p>数学者・中野まさし氏の計算術をゲーム化。数字を「ぐるり」と囲む直感操作で、計算の真髄に触れる体験を。</p>
+                            <button class="play-btn" data-modal="modal-gururizan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-badge">国語：熟語</div>
+                        <div class="game-thumb" style="background: #1a1a1a url('images/jukugo_main.png') center/cover;">
+                        </div>
+                        <div class="game-info">
+                            <p>漢字を組み合わせて熟語をドカン！プロの演出による爽快なエフェクトが、学習への意欲を加速させます。</p>
+                            <button class="play-btn" data-modal="modal-jukugo" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">AIの知能に、アニメ監督の命を。</h2>
+                <div class="story-item">
+                    <div class="story-text">
+                        <h3>「まいまい」から始まった冒険</h3>
+                        <p>きっかけは、私の子どもが描いた一枚のキャラクター。その「まいまい」に命を吹き込みたいという親心から、このプロジェクトは始まりました。</p>
+                        <p>動きはAfter Effectsで、言葉は最新AIで。アニメーション監督としての技術と最新のAI開発を掛け合わせ、今までにない「手触り」の学習体験を追求しています。</p>
+                    </div>
+                    <div class="visual-card">
+                        Animator's Craft<br>×<br>Vibe Coding
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers" class="section dark-bg">
+            <div class="container">
+                <h2 class="section-title">教育現場での活用</h2>
+                <div class="data-viz">
+                    <div class="viz-text">
+                        <h3>「平日の授業時間」に動くゲーム</h3>
+                        <p>NOA_Gamesの最大の特徴は、平日の午前中から昼過ぎにかけてアクセスが急増することです。</p>
+                        <p>これは、全国の先生方が自習時間や授業の導入として、実際にこのゲームを「教材」として選んでくださっている証左です。</p>
+                    </div>
+                    <div class="viz-chart">
+                        <div class="game-play-chart">
+                            <div class="chart-row">
+                                <span class="chart-label-name">さんすうドリル<br>ディフェンス</span>
+                                <div class="chart-bar-wrap">
+                                    <div class="chart-bar" style="width: 100%; background: #4CAF50;"><span>1,000+ plays</span></div>
+                                </div>
+                            </div>
+                            <div class="chart-row">
+                                <span class="chart-label-name">GURURIZAN</span>
+                                <div class="chart-bar-wrap">
+                                    <div class="chart-bar" style="width: 60%; background: #0066ff;"><span>500+ plays</span></div>
+                                </div>
+                            </div>
+                            <div class="chart-row">
+                                <span class="chart-label-name">熟語花火</span>
+                                <div class="chart-bar-wrap">
+                                    <div class="chart-bar" style="width: 40%; background: #e71d36;"><span>300+ plays</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="chart-label" style="text-align: right; margin-top: 15px; color: #ccc;">※プレイ数は目安です</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NOA_Games - Directed by Akifumi Nonaka</p>
+            <div class="footer-links">
+                <a href="https://note.com/noakitw" target="_blank">note</a>
+                <a href="https://x.com/noakitw" target="_blank">X (Twitter)</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-keisan" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <img src="images/keisan_play.jpg" alt="さんすうドリルディフェンスプレイ画面" class="modal-img">
+                <p>計算でモンスターを撃退するタワーディフェンス。全国の小学校の授業時間にも活用され、子供たちが夢中になる要素が満載です。</p>
+                <a href="https://nonaka-a.github.io/keisan-defense/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-gururizan" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <img src="images/gururizan_play.jpg" alt="GURURIZANプレイ画面" class="modal-img">
+                <p>数字を「ぐるり」と囲む直感操作で、計算の真髄に触れる体験を。遊びながら自然と計算力が身につく算数パズルゲームです。</p>
+                <a href="https://nonaka-a.github.io/GURURIZAN/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jukugo" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <img src="images/jukugo_play_jpg.jpg" alt="熟語花火プレイ画面" class="modal-img">
+                <p>プロの演出による爽快なエフェクトが特徴の国語・漢字パズルです。次々と現れる漢字を組み合わせて、美しい熟語の花火を打ち上げましょう！</p>
+                <a href="https://nonaka-a.github.io/jukugo/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
