@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.game-card, .story-item, .feature-item, .data-viz');
+    const animatedElements = document.querySelectorAll('.game-card, .story-item');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
