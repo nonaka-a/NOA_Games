@@ -67,6 +67,7 @@ nav a {
 /* Hero */
 .hero {
     background: radial-gradient(circle at top right, #ffbf69, #ff9f1c);
+    background-attachment: fixed;
     padding: 100px 20px;
     text-align: center;
     color: white;
@@ -228,7 +229,7 @@ footer { padding: 60px 0; text-align: center; background: var(--gray); }
 .footer-links a { color: var(--text-main); text-decoration: none; font-weight: 700; }
 
 @media (max-width: 768px) {
-    .hero h2 { font-size: 2.2rem; }
+    .hero h2 { font-size: 1.8rem; }
     .story-item, .data-viz { grid-template-columns: 1fr; }
     nav ul { display: none; }
     
@@ -279,17 +280,18 @@ footer { padding: 60px 0; text-align: center; background: var(--gray); }
     to { transform: translateY(0); opacity: 1; }
 }
 
-.modal-close {
+.tooltip {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-main);
-    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    z-index: 1500;
+    display: none;
 }
+
 
 .modal-body {
     padding: 40px;

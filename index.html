@@ -34,7 +34,7 @@
 
         <section id="games" class="section">
             <div class="container">
-                <h2 class="section-title">ゲームで「あそぶ」＋「学ぶ」</h2>
+                <h2 class="section-title">ゲームで「あそぶ＋学ぶ」</h2>
                 <div class="game-grid">
                     <div class="game-card highlight">
                         <div class="game-badge">算数：計算</div>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="game-info">
                             <p>モンスターを計算でやっつけろ！計算ドリル×タワーディフェンスゲーム</p>
-                            <button class="play-btn" data-modal="modal-keisan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                            <button class="play-btn" data-modal="modal-keisan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">見る</button>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@
                         </div>
                         <div class="game-info">
                             <p>画面を動き回る丸たちを線でぐるっと囲み、目標の数字を作る計算パズルゲーム</p>
-                            <button class="play-btn" data-modal="modal-gururizan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                            <button class="play-btn" data-modal="modal-gururizan" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">見る</button>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@
                         </div>
                         <div class="game-info">
                             <p>熟語をつくってドカンと爆発！漢字パズルゲーム</p>
-                            <button class="play-btn" data-modal="modal-jukugo" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">あそびに行く</button>
+                            <button class="play-btn" data-modal="modal-jukugo" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">見る</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
 
         <section id="story" class="section alt-bg">
             <div class="container">
-                <h2 class="section-title">AIの知能に、アニメ監督の命を。</h2>
+                <h2 class="section-title">AIの知能に、アニメ監督の命を</h2>
                 <div class="story-item">
                     <div class="story-text">
                         <h3>子供の「こんなのあったら」から始まった冒険</h3>
@@ -99,7 +99,7 @@
 
         <section id="teachers" class="section dark-bg">
             <div class="container">
-                <h2 class="section-title">教育現場での活用実績とデザイン</h2>
+                <h2 class="section-title">教育現場での<br>活用実績とデザイン</h2>
                 
                 <div class="data-dashboard">
                     <div class="dashboard-header">
@@ -138,7 +138,8 @@
                             </ul>
                         </div>
                         <div class="trend-graph">
-                            <svg viewBox="0 0 460 175" class="line-chart">
+                            <div id="graph-tooltip" class="tooltip" style="display:none;"></div>
+                            <svg viewBox="0 0 460 175" class="line-chart" role="img" aria-label="トラフィック推移グラフ：月曜から金曜までのアクセス傾向">
                                 <!-- Background zones -->
                                 <rect x="30" y="18" width="195" height="100" rx="4" fill="rgba(46,196,182,0.08)"/>
                                 <rect x="225" y="18" width="120" height="100" rx="4" fill="rgba(255,159,28,0.12)"/>
@@ -163,13 +164,13 @@
                                 <!-- Sat-Sun flat zero line -->
                                 <path d="M 345,118 L 410,118" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" opacity="0.7"/>
                                 <!-- Data points -->
-                                <circle cx="55" cy="63" r="5" fill="var(--secondary)"/>
-                                <circle cx="120" cy="74" r="5" fill="var(--secondary)"/>
-                                <circle cx="185" cy="60" r="5" fill="var(--secondary)"/>
-                                <circle cx="250" cy="43" r="7" fill="var(--primary)"/>
-                                <circle cx="315" cy="40" r="7" fill="var(--primary)"/>
-                                <circle class="chart-point" cx="345" cy="118" r="5" fill="var(--accent)"/>
-                                <circle class="chart-point" cx="410" cy="118" r="5" fill="var(--accent)"/>
+                                <circle cx="55" cy="63" r="5" fill="var(--secondary)" data-label="月: 63%"/>
+                                <circle cx="120" cy="74" r="5" fill="var(--secondary)" data-label="火: 74%"/>
+                                <circle cx="185" cy="60" r="5" fill="var(--secondary)" data-label="水: 60%"/>
+                                <circle cx="250" cy="43" r="7" fill="var(--primary)" data-label="木: 43%"/>
+                                <circle cx="315" cy="40" r="7" fill="var(--primary)" data-label="金: 40%"/>
+                                <circle class="chart-point" cx="345" cy="118" r="5" fill="var(--accent)" data-label="土: 0%"/>
+                                <circle class="chart-point" cx="410" cy="118" r="5" fill="var(--accent)" data-label="日: 0%"/>
                                 <!-- Zero annotation -->
                                 <text x="377" y="112" fill="var(--accent)" font-size="13" text-anchor="middle" font-weight="700" opacity="0.9">流入 0</text>
                                 <!-- X-axis line -->
@@ -271,35 +272,35 @@
     </footer>
 
     <!-- Modals -->
-    <div id="modal-keisan" class="modal">
+    <div id="modal-keisan" class="modal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
                 <img src="images/keisan_play.jpg" alt="さんすうドリルディフェンスプレイ画面" class="modal-img">
                 <p>計算でモンスターを撃退するタワーディフェンス。実際の小学校のクラスでも、学習用プラットフォームとして日常的に遊ばれている人気タイトルです。</p>
-                <a href="https://nonaka-a.github.io/keisan-defense/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+                <a href="https://nonaka-a.github.io/keisan-defense/" target="_blank" rel="noopener" class="play-btn large">あそぶ</a>
             </div>
         </div>
     </div>
 
-    <div id="modal-gururizan" class="modal">
+    <div id="modal-gururizan" class="modal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
                 <img src="images/gururizan_play.jpg" alt="GURURIZANプレイ画面" class="modal-img">
                 <p>目標の数字になるように、盤面の数字を「ぐるり」と囲んで足し合わせる算数パズル。直感的な操作で、遊びながら自然と計算力が身につきます。</p>
-                <a href="https://nonaka-a.github.io/GURURIZAN/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+                <a href="https://nonaka-a.github.io/GURURIZAN/" target="_blank" rel="noopener" class="play-btn large">あそぶ</a>
             </div>
         </div>
     </div>
 
-    <div id="modal-jukugo" class="modal">
+    <div id="modal-jukugo" class="modal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
                 <img src="images/jukugo_play.jpg" alt="熟語花火プレイ画面" class="modal-img">
                 <p>プロの演出による爽快なエフェクトが特徴の国語・漢字パズルです。次々と現れる漢字を組み合わせて、美しい熟語の花火を打ち上げましょう！</p>
-                <a href="https://nonaka-a.github.io/jukugo/" target="_blank" rel="noopener" class="play-btn large">フルスクリーンであそぶ</a>
+                <a href="https://nonaka-a.github.io/jukugo/" target="_blank" rel="noopener" class="play-btn large">あそぶ</a>
             </div>
         </div>
     </div>
